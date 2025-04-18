@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Flask/Python specific
+instance/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# macOS
+.DS_Store
+
+# VSCode / IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Test coverage / logs / reports
+.coverage
+.tox/
+htmlcov/
+*.log
+
+# Env files
+.env
+.env.*
+
+# Migrations (optional)
+migrations/
