@@ -1,8 +1,7 @@
-from flask import Blueprint
+from .auth import auth_bp
 
-# Create a Blueprint for the routes
-routes = Blueprint('routes', __name__)
-
-@routes.route('/')
-def hello_world():
-    return "Hello, World!"
+def register_routes(app):
+    """
+    Register all routes with the Flask app.
+    """
+    app.register_blueprint(auth_bp, url_prefix='/auth')
